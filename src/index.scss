@@ -1,4 +1,4 @@
-@import "./styles/variables.scss";
+@import "./styles/index";
 @import"the-new-css-reset";
 
 html {
@@ -12,3 +12,9 @@ body {
 
 }
 
+div {
+    @include shape('round');
+    background-color: $color-theme;
+    display: inline-block;
+    padding: 16px;
+}
