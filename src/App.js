@@ -1,15 +1,7 @@
-import { Button } from "./components/Button";
-import { Icon } from "./components/Icon";
-import { InputElement } from "./components/InputElement";
+import { ChatPage } from "./pages/ChatPage";
 
 function App() {
-  return (
-    <div>
-      <Button variant="text">Join</Button>
-      <Button variant="icon"><Icon variant="send" /></Button>
-      <InputElement />
-    </div>
-  );
+  return <ChatPage />;
 }
 
 export default App;
