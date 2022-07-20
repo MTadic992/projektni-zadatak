@@ -24,13 +24,11 @@ export function ChatPage() {
       message: message
     });
     }
-
-    setState((state) => [ ...state, message ]);
   }
 
 useEffect(() => {
   if (drone !== null) return; 
-    setDrone(new Scaledrone('opOjwfDJgHtC2UXl'));
+    setDrone(new window.Scaledrone('opOjwfDJgHtC2UXl'));
 }, [drone, setDrone]);
 
 useEffect(() => {
@@ -47,6 +45,11 @@ useEffect(() => {
   
   room.on('message', message => {
     console.log('Message received', message);
+
+    setState((state) => [ 
+      ...state,
+      MessageModel.fromObject(message.data) 
+    ]);
   });
 }, [drone]);
 
