@@ -18,6 +18,7 @@ export function MessageForm(props) {
           value={props.formState.message}
           required
         />
+        
       </div>
       <div className="message-form__button">
         <Button variant="icon"><Icon variant="send" /></Button>
