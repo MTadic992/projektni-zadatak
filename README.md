@@ -1,12 +1,10 @@
 # algebra-projektni-zadatak
 
-Real-time chat application using React, SCSS, and Scaledrone.
+Real-time chat application using React, SCSS, and Scaledrone. 
 
 Developed as part of Algebra's Frontend developer course.
 
-<a href="https://mario-projektni-zadatak.netlify.app/" target="_blank">
- <strong>Try me on Netlify</strong>
-</a>
+[**Try me on Netlify**](https://mario-projektni-zadatak.netlify.app/)
 
 ---
 
