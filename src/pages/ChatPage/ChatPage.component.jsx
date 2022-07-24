@@ -2,6 +2,7 @@ import "./ChatPage.styles.scss";
 
 import { Message } from "../../components/Message";
 import { MessageForm } from "../../components/MessageForm";
+import { Loader } from "../../components/Loader/Loader.component";
 
 export function ChatPage(props) {
   if (props.error !== null) {
@@ -12,7 +13,9 @@ export function ChatPage(props) {
 
   if (!props.joinedRoom) {
     return (
-      <div className="chat-page">Joining room, please wait...</div>
+      <div className="chat-page">
+        <Loader />
+      </div>
     );
   }
 
@@ -31,7 +34,7 @@ export function ChatPage(props) {
 
   return (
     <div className="chat-page">
-      <div className="chat-page__title">Chat with friends</div>
+      <div className="chat-page__title">Sports chat</div>
       <div className="chat-page__message-list">
         {messageItems}
       </div>

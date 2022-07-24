@@ -6,7 +6,14 @@ html {
 }
 
 body {
-  background: $color-background;
+  background-image: url("./assets/field-background.webp");
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
   color: $color-text;
   font-size: $size-rem;
 }
